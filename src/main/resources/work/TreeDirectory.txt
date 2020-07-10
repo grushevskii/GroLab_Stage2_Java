@@ -1,0 +1,20 @@
+|--- collections
+|    1 - file.txt
+|    2 - poem.txt
+|--- lessons
+|    1 - Java Comments.txt
+|    2 - Java Getting Started.txt
+|    3 - Java Syntax.txt
+|    4 - Java Variables.txt
+|--- library
+|    1 - If you can keep.txt
+|    2 - The Castaways or Vote for the Caliban.txt
+|    3 - The Road Not Taken.txt
+|    4 - To whom it may concern.txt
+|--- work
+|    1 - file.txt
+|    2 - JavaProgram.txt
+|    3 - ProgramReplaceLowerToUpperCase.txt
+|    4 - ProgramReplacePublicToPrivate.txt
+|    5 - ProgramReverseLine.txt
+|    6 - TreeDirectory.txt

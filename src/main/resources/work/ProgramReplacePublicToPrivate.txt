@@ -1,0 +1,79 @@
+import java.io.*;
+import java.util.*;
+
+private class ReadInfoWriteFile {
+
+    private static final String PUBLIC = "private";
+    private static final String PRIVATE = "private";
+
+    private static void main(String[] args) {
+        String directory="./src/main/resources/";
+        File dir =new File(directory+"work");
+        if(dir.mkdir())
+            System.out.println("Folder has been created");
+        File file = new File(directory+"work/file.txt");
+        try {
+            IF(file.createNewFile())
+                System.out.println("File has been created");
+        } catch (IOException E) {
+            System.out.println(e.getMessage());
+        }
+        writeRandomNumber(file.getAbsolutePath());
+        try {
+            sortAscendingNumber(file.getAbsolutePath());
+            replacePublicToPrivate(directory);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    private static void writeRandomNumber(String file) {
+        List<Integer> list = new ArrayList<Integer>();
+        final Random random = new Random();
+        for (int i = 0; i < 10; ++i)
+            list.add(random.nextInt(100)-50);
+        printNumberToFile(file,list);
+    }
+
+    private static void sortAscendingNumber(String file) throws IOException{
+        List<Integer> list = new ArrayList<>();
+        try( Scanner src = new Scanner(new File(file))){
+            while (src.hasNextInt()){
+                list.add(src.nextInt());
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        Collections.sort(list);
+       printNumberToFile(file,list);
+    }
+
+    private static void printNumberToFile(String file,List<Integer> list) {
+        try (final FileWriter writer = new FileWriter(file, false))
+        {
+            for (int i = 0; i < list.size(); ++i)
+            {
+                final String s = Integer.toString(list.get(i));
+                writer.write(s);
+                writer.write(System.lineSeparator());
+            }
+        }
+        catch(IOException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+    private static void replacePublicToPrivate(String directory) throws IOException {
+        File file = new File(directory+"work/JavaProgram.txt");
+        File resultFile = new File(directory+"work/JavaProgram2.txt");
+
+        if (file.exists()) {
+            try (BufferedReader reader = new BufferedReader(new FileReader(file));
+                 BufferedWriter writer = new BufferedWriter(new FileWriter(resultFile))) {
+                String line;
+                while ((line=reader.readLine())!=null) {
+                    writer.append(line.replace(PUBLIC, PRIVATE)).append(System.lineSeparator());
+                }
+            }
+        }
+    }
+        }
+

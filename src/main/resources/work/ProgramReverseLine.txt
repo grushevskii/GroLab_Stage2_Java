@@ -1,0 +1,79 @@
+;*.oi.avaj tropmi
+;*.litu.avaj tropmi
+
+{ eliFetirWofnIdaeR ssalc cilbup
+
+;"cilbup" = CILBUP gnirtS lanif citats cilbup    
+;"etavirp" = ETAVIRP gnirtS lanif citats cilbup    
+
+{ )sgra ][gnirtS(niam diov citats cilbup    
+;"/secruoser/niam/crs/."=yrotcerid gnirtS        
+;)"krow"+yrotcerid(eliF wen= rid eliF        
+))(ridkm.rid(fi        
+;)"detaerc neeb sah redloF"(nltnirp.tuo.metsyS            
+;)"txt.elif/krow"+yrotcerid(eliF wen = elif eliF        
+{ yrt        
+))(eliFweNetaerc.elif(FI            
+;)"detaerc neeb sah eliF"(nltnirp.tuo.metsyS                
+{ )E noitpecxEOI( hctac }        
+;))(egasseMteg.e(nltnirp.tuo.metsyS            
+}        
+;))(htaPetulosbAteg.elif(rebmuNmodnaRetirw        
+{ yrt        
+;))(htaPetulosbAteg.elif(rebmuNgnidnecsAtros            
+;)yrotcerid(etavirPoTcilbuPecalper            
+{ )e noitpecxEOI( hctac }        
+;)(ecarTkcatStnirp.e            
+}        
+}    
+{ )elif gnirtS(rebmuNmodnaRetirw diov citats cilbup    
+;)(>regetnI<tsiLyarrA wen = tsil >regetnI<tsiL        
+;)(modnaR wen = modnar modnaR lanif        
+)i++ ;01 < i ;0 = i tni( rof        
+;)05-)001(tnItxen.modnar(dda.tsil            
+;)tsil,elif(eliFoTrebmuNtnirp        
+}    
+
+{noitpecxEOI sworht )elif gnirtS(rebmuNgnidnecsAtros diov citats cilbup    
+;)(><tsiLyarrA wen = tsil >regetnI<tsiL        
+{)))elif(eliF wen(rennacS wen = crs rennacS (yrt        
+{))(tnItxeNsah.crs( elihw            
+;))(tnItxen.crs(dda.tsil                
+}            
+{ )e noitpecxEdnuoFtoNeliF( hctac }        
+;)(ecarTkcatStnirp.e            
+}        
+;)tsil(tros.snoitcelloC        
+;)tsil,elif(eliFoTrebmuNtnirp       
+}    
+
+{ )tsil >regetnI<tsiL,elif gnirtS(eliFoTrebmuNtnirp diov citats cilbup    
+))eslaf ,elif(retirWeliF wen = retirw retirWeliF lanif( yrt        
+{        
+)i++ ;)(ezis.tsil < i ;0 = i tni( rof            
+{            
+;))i(teg.tsil(gnirtSot.regetnI = s gnirtS lanif                
+;)s(etirw.retirw                
+;))(rotarapeSenil.metsyS(etirw.retirw                
+}            
+}        
+{ )e noitpecxEOI(hctac        
+;))(egasseMteg.e(nltnirp.tuo.metsyS            
+}        
+}    
+{ noitpecxEOI sworht )yrotcerid gnirtS(etavirPoTcilbuPecalper diov citats cilbup    
+;)"txt.margorPavaJ/krow"+yrotcerid(eliF wen = elif eliF        
+;)"txt.2margorPavaJ/krow"+yrotcerid(eliF wen = eliFtluser eliF        
+
+{ ))(stsixe.elif( fi        
+;))elif(redaeReliF wen(redaeRdereffuB wen = redaer redaeRdereffuB( yrt            
+{ )))eliFtluser(retirWeliF wen(retirWdereffuB wen = retirw retirWdereffuB                 
+;enil gnirtS                
+{ )llun=!))(eniLdaer.redaer=enil(( elihw                
+;))(rotarapeSenil.metsyS(dneppa.))ETAVIRP ,CILBUP(ecalper.enil(dneppa.retirw                    
+}                
+}            
+}        
+}    
+}        
+
